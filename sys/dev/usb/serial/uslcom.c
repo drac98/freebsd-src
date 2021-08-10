@@ -606,7 +606,7 @@ uslcom_cfg_set_rts(struct ucom_softc *ucom, uint8_t onoff)
 
 	if (ucom_cfg_do_request(sc->sc_udev, &sc->sc_ucom,
 	    &req, NULL, 0, 1000)) {
-		DPRINTF("Setting DTR failed (ignored)\n");
+		DPRINTF("Setting RTS failed (ignored)\n");
 	}
 }
 
